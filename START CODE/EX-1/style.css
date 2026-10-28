@@ -1,0 +1,25 @@
+body {
+    background: grey;
+    font-family: sans-serif;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+dIv {
+    background-color: aliceblue;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+button {
+    border-radius: 30px;
+    border: none;
+    color : white;
+    cursor: pointer;
+}
+
+div:nth-child(1) button { background: teal; }
+div:nth-child(2) button { background: orange; color: black; }
+div:nth-child(3) button { background: purple; }
