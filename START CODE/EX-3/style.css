@@ -1,0 +1,18 @@
+/* TODO */
+button {
+    color: aliceblue;
+    background-color: #e07bb8;
+    border: 6px solid #e07bb8;
+    border-radius: 30px;
+    font-size: 28px;
+    padding: 20px 50px;
+    border-color: red;
+    cursor: pointer;
+    
+}
+
+button:hover {
+    background-color: blueviolet;
+    border-color: yellow;
+
+}
