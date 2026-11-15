@@ -1,0 +1,45 @@
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 2rem);  
+    margin: 1rem;
+    gap: 1rem;
+}
+
+header, footer {
+    background-color: blue;
+    height: 100px;
+}
+
+main {                               
+    color: white;
+    flex-grow: 1;                     
+    display: flex;                    
+    justify-content: space-between;
+    column-gap: 1em;
+}
+
+.left-side {
+    background-color: greenyellow;
+    flex: 1;                          
+}
+
+.right-side {
+    background-color: brown;
+    border-radius: 0.5em;
+    padding: 20px;
+    width: 300px;
+}
+
+.box-item {
+    display: flex;
+    flex-wrap: wrap;                 
+    gap: 0.5em;
+}
+
+.box {
+    background-color: green;
+    border-radius: 0.5em;
+    width: 100px;
+    height: 100px;
+}

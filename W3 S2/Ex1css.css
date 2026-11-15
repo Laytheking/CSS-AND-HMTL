@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  height: 100vh;
+  padding-left: 10em;    
+  padding-right: 10em;   
+  box-sizing: border-box;
+  background: pink;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;                
+  height: 100%;
+  background: greenyellow; 
+}
+
+header,
+footer {
+  height: 100px;
+  background: gray;
+}
+
+main {
+  flex-grow: 1;            
+  background: gray;
+}
