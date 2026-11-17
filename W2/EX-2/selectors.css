@@ -58,6 +58,9 @@ div p {
 input[type="text"]{
     background-color: gray;
 }
+input[type="password"]{
+    background-color: gray;
+}
 
 /* Make all "checked" checkboxes have a left margin of 50px(margin-left: 50px)*/
 input[type="checkbox"]:checked {

@@ -1,0 +1,62 @@
+.Item{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+.Item1{
+    height: 333px;
+    width: 333px;
+    background-color: aqua;
+}
+.Item2{
+    height: 333px;
+    width: 333px;
+    background-color: aqua;
+}
+.Item3{
+    height: 333px;
+    width: 333px;
+    background-color: aqua;
+}
+.Item4{
+    height: 333px;
+    width: 333px;
+    background-color: aqua;
+}
+.Item5{
+    height: 333px;
+    width: 333px;
+    background-color: aqua;
+}
+.Item6{
+    height: 333px;
+    width: 333px;
+    background-color: aqua;
+}
+.Item7{
+    height: 333px;
+    width: 333px;
+    background-color: aqua;
+}
+.Item8{
+    height: 333px;
+    width: 333px;
+    background-color: aqua;
+} 
+@media (max-width: 1000px ) {
+    .Item {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .Item {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px ) {
+    .Item {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

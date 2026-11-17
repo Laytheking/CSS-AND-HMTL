@@ -14,5 +14,6 @@ button {
 button:hover {
     background-color: blueviolet;
     border-color: yellow;
-
-}
+    font-size: 42px;
+    transition: 3s;
+ }

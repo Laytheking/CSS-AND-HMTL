@@ -1,0 +1,39 @@
+.item{
+    padding: 20px, 40px;
+    color: azure;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: darkblue;
+    border: 6px solid black;
+
+
+}
+
+.gird-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fix,mimax(300px,1fr));
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.a{
+    grid-column: 3 span;
+}
+
+.b{
+    grid-row: 2 span;
+}
+
+.c{
+    grid-column: 1 span;
+}
+
+.d{
+    grid-column: 1 span;
+}
+
+.e{
+    grid-column: 2 span;
+}
+.f{
+ grid-column: 3 span;
+}

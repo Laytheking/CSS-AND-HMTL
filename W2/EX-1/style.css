@@ -5,7 +5,7 @@ body {
     margin-right: 100px;
 }
 
-dIv {
+div {
     background-color: aliceblue;
     padding-bottom: 20px;
     padding-top: 20px;
@@ -20,6 +20,6 @@ button {
     cursor: pointer;
 }
 
-div:nth-child(1) button { background: teal; }
-div:nth-child(2) button { background: orange; color: black; }
-div:nth-child(3) button { background: purple; }
+.t { background: teal; }
+.j { background: orange;}
+.m { background: purple; }
