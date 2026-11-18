@@ -1,0 +1,196 @@
+:root {
+    --teal: #1aa58a;
+    --teal-dark: #148a73;
+    --bg-a: #4f7a8e;
+    --bg-b: #6b95a8;
+    --border: #d9d9d9;
+    --text: #333;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    color: var(--text);
+    background: linear-gradient(160deg, var(--bg-a), var(--bg-b));
+}
+
+/* Card */
+.card {
+    width: 100%;
+    max-width: 780px;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, .25);
+}
+
+.card-header {
+    background: #f1f1f1;
+    border-bottom: 1px solid var(--border);
+    padding: 20px 28px;
+    text-align: center;
+}
+
+.card-header h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+/* Layout: 2-column grid, "full" fields span both */
+.card-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px 20px;
+    padding: 32px 28px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.field.full {
+    grid-column: 1 / -1;
+}
+
+/* Labels */
+.field>label,
+.field>.label,
+.range-row+* {
+    color: var(--teal);
+    font-size: 1.05rem;
+    font-weight: 600;
+}
+
+.field>label,
+.field>.label {
+    display: block;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px 14px;
+    font: inherit;
+    font-size: 1.05rem;
+    color: var(--text);
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 3px;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #b5b5b5;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 140px;
+}
+
+/* Focus highlight */
+input:focus,
+select:focus,
+
+textarea:focus {
+    outline: none;
+    border-color: var(--teal);
+    box-shadow: 0 0 0 3px rgba(26, 165, 138, .2);
+}
+
+/* Radios and checkboxes */
+.choices {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 16px;
+}
+
+.choices label {
+    font-size: 1.05rem;
+    color: var(--text);
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.choices input {
+    width: 18px;
+    height: 18px;
+    margin: 0 4px 0 0;
+    accent-color: var(--teal);
+    vertical-align: middle;
+}
+
+/* Range + value badge */
+.range-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+input[type="range"] {
+    flex: 1;
+    accent-color: var(--teal);
+}
+
+output {
+    background: var(--teal);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+/* File input */
+input[type="file"] {
+    font-size: 1rem;
+}
+
+/* Footer + button */
+.card-footer {
+    background: #f1f1f1;
+    border-top: 1px solid var(--border);
+    padding: 18px 28px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+input[type="submit"] {
+    background: var(--teal);
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 12px 30px;
+    font: inherit;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background .2s;
+}
+
+input[type="submit"]:hover {
+    background: var(--teal-dark);
+}
+
+/* Mobile: single column */
+@media (max-width: 520px) {
+    .card-body {
+        grid-template-columns: 1fr;
+    }
+}
